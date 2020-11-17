@@ -8,6 +8,9 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
   <header>
    <p>WELCOME TO C'STONE FOUNDATION</p> 
    <p><a href="#" target="_blank"><i class="fab fa-facebook fa"></i></a></p>
@@ -18,14 +21,26 @@
   <nav class="navbar">
     <nav>
       <div class="nav-logo">
-        <img src="./img/output-onlinepngtools.png" width="70px" height="70px">
+        <img src="./img/output2-onlinepngtools.png" width="70px" height="70px">
       </div>
       <div class="main-nav">
-        <p><a href="index.html">HOME</a></p>
-        <p><a href="about.html">WHO WE ARE</a></p>
-        <p><a href="about.html">GALLERY</a></p>
-        <p><a href="about.html">NEWS</a></p>
-        <p><a href="contact.html">CONTACT</a></p>
+        <ul class="main-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">WHO WE ARE</a>
+            <i class="fas fa-angle-down"></i>
+            <ul class="nest">
+              <li><a href="about.html#about">About Us</a></li>
+              <li><a href="about.html#abt-section">Who We Are</a>
+              </li>
+              <li><a href="about.html#work">Our Works</a></li>
+              <li><a href="about.html#strategy">Our Strategy</a>
+              <li>
+            </ul>
+          </li>
+          <li><a href="about.html">GALLERY</a></li>
+          <li><a href="about.html">NEWS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
       </div>
     </nav>
     <nav>
@@ -36,9 +51,10 @@
   </nav>
   <main class="showcase">
     <div class="show-box">
-      <p>A Little about</p>
+      <p class="pa">A Little about</p>
       <h1><span class="c">C'STONE</span>FOUNDATION</h1>
-      <P>C'Stone Foundation is a non-profit organization and our passion is to nuture male children as our contribution towards raising Godly men in society</P>
+      <P>C'Stone Foundation is a non-profit organization and our passion is to nuture male children as our contribution
+      towards raising Godly men in society</P>
       <a href="about.html">Read More</a>
     </div>
   </main>
@@ -104,5 +120,9 @@
   <footer>
     <P>Christ The Corner Stone Foundation</p>
   </footer>
+
+  <script>
+    document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-list').classList.toggle('.show'));
+  </script>
 </body>
 </html>

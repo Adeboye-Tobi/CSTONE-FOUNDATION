@@ -8,6 +8,9 @@
   <title>ABOUT US</title>
 </head>
 <body>
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
   <header>
     <p>WELCOME TO C'STONE FOUNDATION</p>
     <p><a href="#" target="_blank"><i class="fab fa-facebook fa"></i></a></p>
@@ -18,14 +21,26 @@
   <nav class="navbar">
     <nav>
       <div class="nav-logo">
-        <img src="./img/output-onlinepngtools.png" width="70px" height="70px">
+        <img src="./img/output2-onlinepngtools.png" width="70px" height="70px">
       </div>
       <div class="main-nav">
-        <p><a href="index.html">HOME</a></p>
-        <p><a href="about.html">WHO WE ARE</a></p>
-        <p><a href="gallery.html">GALLERY</a></p>
-        <p><a href="news.html">NEWS</a></p>
-        <p><a href="contact.html">CONTACT</a></p>
+        <ul class="main-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">WHO WE ARE</a>
+            <i class="fas fa-angle-down"></i>
+            <ul class="nest">
+              <li><a href="about.html#about">About Us</a></li>
+              <li><a href="about.html#abt-section">Who We Are</a>
+              </li>
+              <li><a href="about.html#work">Our Works</a></li>
+              <li><a href="about.html#strategy">Our Strategy</a>
+              <li>
+            </ul>
+          </li>
+          <li><a href="about.html">GALLERY</a></li>
+          <li><a href="about.html">NEWS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
       </div>
     </nav>
     <nav>
@@ -41,14 +56,14 @@
       <li><a href="#works">OUR WORKS</a></li>
     </Ul>
   </main>
-  <main class="about">
+  <main id="about">
     <H2>ABOUT C'STONE FOUNDATION</H2>
     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, non nostrum? Architecto, dolore. Adipisci, dicta. Praesentium cupiditate nihil beatae possimus, labore mollitia quis reiciendis iusto? Minus veniam itaque earum deserunt?</P>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat incidunt magnam nisi molestiae rem. Consequuntur vero in corrupti sit temporibus!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloremque eos cumque cupiditate maiores non atque neque blanditiis necessitatibus tempora quibusdam, dolor omnis, nostrum expedita unde labore nam. Accusamus, delectus.</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa reiciendis, sit, eum at possimus a libero rerum corrupti totam ipsam explicabo vitae nulla facilis ducimus nihil? Perferendis voluptatibus neque sunt.</p>
   </main>
-  <section class="abt-section">
+  <section id="abt-section">
     <div class="abt_sec">
       <div class="abt-box">
         <p><span class="ab">VISION</span>: To have a society of Godly men</p>

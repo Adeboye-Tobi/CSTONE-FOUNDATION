@@ -8,6 +8,9 @@
   <title>Contact Us</title>
 </head>
 <body>
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
   <header>
     <p>WELCOME TO C'STONE FOUNDATION</p>
     <p><a href="#" target="_blank"><i class="fab fa-facebook fa"></i></a></p>
@@ -18,14 +21,26 @@
   <nav class="navbar">
     <nav>
       <div class="nav-logo">
-        <img src="./img/output-onlinepngtools.png" width="70px" height="70px">
+        <img src="./img/output2-onlinepngtools.png" width="70px" height="70px">
       </div>
       <div class="main-nav">
-        <p><a href="index.html">HOME</a></p>
-        <p><a href="about.html">WHO WE ARE</a></p>
-        <p><a href="gallery.html">GALLERY</a></p>
-        <p><a href="news.html">NEWS</a></p>
-        <p><a href="contact.html">CONTACT</a></p>
+        <ul class="main-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">WHO WE ARE</a>
+            <i class="fas fa-angle-down"></i>
+            <ul class="nest">
+              <li><a href="about.html#about">About Us</a></li>
+              <li><a href="about.html#abt-section">Who We Are</a>
+              </li>
+              <li><a href="about.html#work">Our Works</a></li>
+              <li><a href="about.html#strategy">Our Strategy</a>
+              <li>
+            </ul>
+          </li>
+          <li><a href="about.html">GALLERY</a></li>
+          <li><a href="about.html">NEWS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
       </div>
     </nav>
     <nav>
@@ -34,15 +49,13 @@
       </div>
     </nav>
   </nav>
-  <main>
-    <div class="main-contact">
-      <div class="contact-box">
-          <h2>C'Stone Foundation Head Office</h2>
-          <h3>20,Popola Avenue, Opposite Polaris Bank Ikeja</h3>
-          <p>If you would like more information about C'Stone Foundation or our activities, feel free leave us a mail below. We
-          would really like to hear from you</p>
-      </div>
-    </div>
+  <main class="main-contact">
+     <div class="contact-box">
+        <h2>C'Stone Foundation Head Office</h2>
+        <h3>20,Popola Avenue, Opposite Polaris Bank Ikeja</h3>
+        <p>If you would like more information about C'Stone Foundation or our activities, feel free leave us a mail below. We
+        would really like to hear from you</p>
+     </div>
   </main>
   </section>
   <section class="contact-form">
